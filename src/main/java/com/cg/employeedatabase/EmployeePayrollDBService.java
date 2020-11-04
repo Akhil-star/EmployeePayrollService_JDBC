@@ -66,7 +66,7 @@ public class EmployeePayrollDBService {
     }
 
     public int updateEmployeeData(String name, double salary) {
-        return this.updateEmployeeDataUsingStatement( name,salary );
+        return this.updateEmployeeDataUsingPreparedStatement( name,salary );
     }
 
     private int updateEmployeeDataUsingStatement(String name,double salary){
@@ -74,6 +74,20 @@ public class EmployeePayrollDBService {
         try(Connection connection =this.getConnection()) {
             Statement statement = connection.createStatement();
             return statement.executeUpdate( sql );
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    private int updateEmployeeDataUsingPreparedStatement(String name,double salary){
+        String sql = "update employee_payroll set salary = ? where name = ?";
+        try(Connection connection =this.getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setDouble( 1,salary );
+            preparedStatement.setString( 2,name );
+            int status =preparedStatement.executeUpdate();
+            return status;
         }catch (SQLException e){
             e.printStackTrace();
         }

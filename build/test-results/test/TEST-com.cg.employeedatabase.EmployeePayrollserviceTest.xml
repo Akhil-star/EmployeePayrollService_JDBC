@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.employeedatabase.EmployeePayrollserviceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-04T14:36:38" hostname="DESKTOP-AURK5V2" time="0.584">
+<testsuite name="com.cg.employeedatabase.EmployeePayrollserviceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-04T14:52:32" hostname="DESKTOP-AURK5V2" time="0.357">
   <properties/>
-  <testcase name="givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDataBase" classname="com.cg.employeedatabase.EmployeePayrollserviceTest" time="0.584"/>
+  <testcase name="givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDataBase" classname="com.cg.employeedatabase.EmployeePayrollserviceTest" time="0.357"/>
   <system-out><![CDATA[Driver Loaded!!
   com.mysql.jdbc.Driver
   com.mysql.fabric.jdbc.FabricMySQLDriver
