@@ -1,6 +1,7 @@
 package com.cg.employeedatabase;
 
 import java.sql.*;
+import java.sql.Date;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -51,18 +52,9 @@ public class EmployeePayrollDBService {
         }
     }
 
-
     public List<EmployeePayrollData> readData(){
         String sql = "Select * from employee_payroll";
-        List<EmployeePayrollData> employeePayrollList = new ArrayList<>();
-        try(Connection connection =this.getConnection()){
-            Statement statement =connection.createStatement();
-            ResultSet resultSet = statement.executeQuery( sql );
-            employeePayrollList = this.getEmployeePayrollData( resultSet );
-        }catch (SQLException e){
-            e.printStackTrace();
-        }
-        return employeePayrollList;
+        return this.getEmployeeDataUsingDB(sql);
     }
 
     public int updateEmployeeData(String name, double salary) {
@@ -132,5 +124,23 @@ public class EmployeePayrollDBService {
         }catch (SQLException e){
             e.printStackTrace();
         }
+    }
+
+    public List<EmployeePayrollData> getEmployeePayrollForDateRange(LocalDate startDate, LocalDate endDate) {
+        String sql = String.format( "select * from employee_payroll where start between '%s' and '%s';",
+                                                                      Date.valueOf(startDate),Date.valueOf(endDate));
+        return this.getEmployeeDataUsingDB(sql);
+    }
+
+    private List<EmployeePayrollData> getEmployeeDataUsingDB(String sql) {
+        List<EmployeePayrollData> employeePayrollList = new ArrayList<>();
+        try(Connection connection =this.getConnection()){
+            Statement statement =connection.createStatement();
+            ResultSet resultSet = statement.executeQuery( sql );
+            employeePayrollList = this.getEmployeePayrollData( resultSet );
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return employeePayrollList;
     }
 }
