@@ -1,5 +1,6 @@
 package com.cg.employeedatabase;
 
+import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 import java.sql.Date;
 import java.time.LocalDate;
@@ -157,5 +158,24 @@ public class EmployeePayrollDBService {
             e.printStackTrace();
         }
         return genderToAverageSalaryMap;
+    }
+
+    public EmployeePayrollData addEmployeeToPayroll(String name,String gender, double salary, LocalDate startDate) {
+        int id = -1;
+        EmployeePayrollData employeePayrollData = null;
+        String sql = String.format( "Insert into employee_payroll(name,gender,salary,start)" +
+                "values ('%s','%s','%s','%s')",name,gender,salary,Date.valueOf(startDate));
+        try(Connection connection = this.getConnection()){
+            Statement statement = connection.createStatement();
+            int rowaffected = statement.executeUpdate( sql,statement.RETURN_GENERATED_KEYS );
+            if(rowaffected == 1){
+                ResultSet resultSet = statement.getGeneratedKeys();
+                if(resultSet.next())
+                    id = resultSet.getInt( 1 );
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return employeePayrollData;
     }
 }
