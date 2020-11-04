@@ -3,9 +3,7 @@ package com.cg.employeedatabase;
 import java.sql.*;
 import java.sql.Date;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.List;
+import java.util.*;
 
 public class EmployeePayrollDBService {
 
@@ -142,5 +140,22 @@ public class EmployeePayrollDBService {
             e.printStackTrace();
         }
         return employeePayrollList;
+    }
+
+    public Map<String, Double> getAverageSalaryByGender() {
+        String query = "select gender,avg(salary) as avg_salary from employee_payroll group by gender";
+        Map<String,Double> genderToAverageSalaryMap = new HashMap<>();
+        try(Connection connection = this.getConnection()){
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            ResultSet rs = preparedStatement.executeQuery();
+            while (rs.next()) {
+                String gender = rs.getString( 1 );
+                Double avg = rs.getDouble( 2 );
+                genderToAverageSalaryMap.put( gender,avg );
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return genderToAverageSalaryMap;
     }
 }

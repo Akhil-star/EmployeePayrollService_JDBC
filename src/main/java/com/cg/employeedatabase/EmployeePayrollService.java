@@ -1,7 +1,12 @@
 package com.cg.employeedatabase;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class EmployeePayrollService {
 
@@ -53,5 +58,11 @@ public class EmployeePayrollService {
          if(ioService.equals( IOService.DB_IO ))
              return employeePayrollDBService.getEmployeePayrollForDateRange(startDate,endDate);
          return null;
+    }
+
+    public Map<String,Double> readAverageSalaryByGender(IOService ioService){
+        if(ioService.equals( IOService.DB_IO ))
+            return employeePayrollDBService.getAverageSalaryByGender();
+        return null;
     }
 }
