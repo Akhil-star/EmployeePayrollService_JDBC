@@ -70,4 +70,18 @@ public class EmployeePayrollService {
         employeePayrollList.add(employeePayrollDBService.addEmployeeToPayroll(name,gender,salary,startDate));
     }
 
+    public void addEmployeesToPayroll(List<EmployeePayrollData> employeePayrollDataList){
+        employeePayrollDataList.forEach( employeePayrollData -> {
+            System.out.println("employees being added : "+employeePayrollData.name);
+            this.addEmployeeToPayroll(employeePayrollData.name, employeePayrollData.gender, employeePayrollData.salary, employeePayrollData.startDate );
+            System.out.println("Employees added: "+employeePayrollData.name);
+        } );
+         System.out.println(this.employeePayrollList);
+    }
+
+    public long countEntries(IOService ioService){
+        if(ioService.equals( IOService.DB_IO ))
+              return employeePayrollList.size();
+        return 0;
+    }
 }

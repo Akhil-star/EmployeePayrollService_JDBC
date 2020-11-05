@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.employeedatabase.EmployeePayrollserviceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-04T17:52:58" hostname="DESKTOP-AURK5V2" time="0.425">
+<testsuite name="com.cg.employeedatabase.EmployeePayrollserviceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-05T13:53:05" hostname="DESKTOP-AURK5V2" time="1.42">
   <properties/>
-  <testcase name="givenNewEmployee_WhenAdded_ShouldSyncWithDB" classname="com.cg.employeedatabase.EmployeePayrollserviceTest" time="0.425"/>
+  <testcase name="given6Employees_WhenAddedToDB_ShouldMatchEmployeeEntries" classname="com.cg.employeedatabase.EmployeePayrollserviceTest" time="1.42"/>
   <system-out><![CDATA[Driver Loaded!!
   com.mysql.jdbc.Driver
   com.mysql.fabric.jdbc.FabricMySQLDriver
@@ -17,6 +17,27 @@ Driver Loaded!!
   com.mysql.fabric.jdbc.FabricMySQLDriver
 Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
 Connection was successful
+Driver Loaded!!
+  com.mysql.jdbc.Driver
+  com.mysql.fabric.jdbc.FabricMySQLDriver
+Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
+Connection was successful
+Driver Loaded!!
+  com.mysql.jdbc.Driver
+  com.mysql.fabric.jdbc.FabricMySQLDriver
+Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
+Connection was successful
+Driver Loaded!!
+  com.mysql.jdbc.Driver
+  com.mysql.fabric.jdbc.FabricMySQLDriver
+Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
+Connection was successful
+Driver Loaded!!
+  com.mysql.jdbc.Driver
+  com.mysql.fabric.jdbc.FabricMySQLDriver
+Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
+Connection was successful
+Duration without Thread: PT1.0701285S
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
