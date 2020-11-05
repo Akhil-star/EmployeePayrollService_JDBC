@@ -3,34 +3,92 @@
 +  com.mysql.fabric.jdbc.FabricMySQLDriver
 ]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
 Connection was successful
+$employees being added : Jeff Bezos
 Driver Loaded!!
   com.mysql.jdbc.Driver
 +  com.mysql.fabric.jdbc.FabricMySQLDriver
 ]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
 Connection was successful
+Employees added: Jeff Bezos
+$employees being added : Bill Gates
 Driver Loaded!!
   com.mysql.jdbc.Driver
 +  com.mysql.fabric.jdbc.FabricMySQLDriver
 ]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
 Connection was successful
+Employees added: Bill Gates
+)employees being added : Mark Zuckerberg
 Driver Loaded!!
   com.mysql.jdbc.Driver
 +  com.mysql.fabric.jdbc.FabricMySQLDriver
 ]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
 Connection was successful
+"Employees added: Mark Zuckerberg
+ employees being added : Sunder
 Driver Loaded!!
   com.mysql.jdbc.Driver
 +  com.mysql.fabric.jdbc.FabricMySQLDriver
 ]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
 Connection was successful
+Employees added: Sunder
+ employees being added : Mukesh
 Driver Loaded!!
   com.mysql.jdbc.Driver
 +  com.mysql.fabric.jdbc.FabricMySQLDriver
 ]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
 Connection was successful
+Employees added: Mukesh
+employees being added : Anil
 Driver Loaded!!
   com.mysql.jdbc.Driver
 +  com.mysql.fabric.jdbc.FabricMySQLDriver
 ]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
 Connection was successful
-'Duration without Thread: PT1.0701285S
+Employees added: Anil
+Ã[EmployeePayrollData{id=1, name='Bill', salary=1000000.0, startDate=2018-01-03}, EmployeePayrollData{id=2, name='Mark', salary=2000000.0, startDate=2019-11-13}, EmployeePayrollData{id=3, name='Charlie', salary=1500000.0, startDate=2020-05-21}, EmployeePayrollData{id=4, name='Terissa', salary=3000000.0, startDate=2018-01-03}, EmployeePayrollData{id=48, name='Jeff Bezos', salary=100000.0, startDate=2020-11-05}, EmployeePayrollData{id=49, name='Bill Gates', salary=200000.0, startDate=2020-11-05}, EmployeePayrollData{id=50, name='Mark Zuckerberg', salary=300000.0, startDate=2020-11-05}, EmployeePayrollData{id=51, name='Sunder', salary=600000.0, startDate=2020-11-05}, EmployeePayrollData{id=52, name='Mukesh', salary=100000.0, startDate=2020-11-05}, EmployeePayrollData{id=53, name='Anil', salary=200000.0, startDate=2020-11-05}]
+'Duration without Thread: PT0.7938768S
+$employees being added : Bill Gates
+$employees being added : Jeff Bezos
+Driver Loaded!!
+employees being added : Anil
+ employees being added : Mukesh
+ employees being added : Sunder
+Driver Loaded!!
+Driver Loaded!!
+Driver Loaded!!
+  com.mysql.jdbc.Driver
+)employees being added : Mark Zuckerberg
++  com.mysql.fabric.jdbc.FabricMySQLDriver
+  com.mysql.jdbc.Driver
+Driver Loaded!!
+Driver Loaded!!
+  com.mysql.jdbc.Driver
+]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
+  com.mysql.jdbc.Driver
+  com.mysql.jdbc.Driver
++  com.mysql.fabric.jdbc.FabricMySQLDriver
+  com.mysql.jdbc.Driver
++  com.mysql.fabric.jdbc.FabricMySQLDriver
++  com.mysql.fabric.jdbc.FabricMySQLDriver
+]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
+]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
++  com.mysql.fabric.jdbc.FabricMySQLDriver
++  com.mysql.fabric.jdbc.FabricMySQLDriver
+]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
+]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
+]Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
+Connection was successful
+Connection was successful
+Connection was successful
+Connection was successful
+Connection was successful
+Connection was successful
+Employees added: Mukesh
+Employees added: Bill Gates
+Employees added: Anil
+Employees added: Sunder
+"Employees added: Mark Zuckerberg
+Employees added: Jeff Bezos
+¾
+[EmployeePayrollData{id=1, name='Bill', salary=1000000.0, startDate=2018-01-03}, EmployeePayrollData{id=2, name='Mark', salary=2000000.0, startDate=2019-11-13}, EmployeePayrollData{id=3, name='Charlie', salary=1500000.0, startDate=2020-05-21}, EmployeePayrollData{id=4, name='Terissa', salary=3000000.0, startDate=2018-01-03}, EmployeePayrollData{id=48, name='Jeff Bezos', salary=100000.0, startDate=2020-11-05}, EmployeePayrollData{id=49, name='Bill Gates', salary=200000.0, startDate=2020-11-05}, EmployeePayrollData{id=50, name='Mark Zuckerberg', salary=300000.0, startDate=2020-11-05}, EmployeePayrollData{id=51, name='Sunder', salary=600000.0, startDate=2020-11-05}, EmployeePayrollData{id=52, name='Mukesh', salary=100000.0, startDate=2020-11-05}, EmployeePayrollData{id=53, name='Anil', salary=200000.0, startDate=2020-11-05}, EmployeePayrollData{id=55, name='Mukesh', salary=100000.0, startDate=2020-11-05}, EmployeePayrollData{id=58, name='Anil', salary=200000.0, startDate=2020-11-05}, EmployeePayrollData{id=57, name='Sunder', salary=600000.0, startDate=2020-11-05}, EmployeePayrollData{id=56, name='Bill Gates', salary=200000.0, startDate=2020-11-05}, EmployeePayrollData{id=59, name='Mark Zuckerberg', salary=300000.0, startDate=2020-11-05}, EmployeePayrollData{id=54, name='Jeff Bezos', salary=100000.0, startDate=2020-11-05}]
+$Duration with thread: PT0.3520541S
