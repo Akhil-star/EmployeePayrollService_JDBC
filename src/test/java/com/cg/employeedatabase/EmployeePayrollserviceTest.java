@@ -26,7 +26,7 @@ public class EmployeePayrollserviceTest {
     public void givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDataBase() {
         EmployeePayrollService employeePayrollService = new EmployeePayrollService();
         List<EmployeePayrollData> employeePayrollData = employeePayrollService.readEmployeePayrollData( DB_IO);
-        employeePayrollService.updateEmployeeSalary("Terissa",3000000.00);
+        employeePayrollService.updateEmployeeSalary("Terissa",4000000.00);
         boolean result = employeePayrollService.checkEmployeePayrollInsyncWithDB("Terissa");
         Assert.assertTrue( result );
     }
@@ -78,6 +78,6 @@ public class EmployeePayrollserviceTest {
         employeePayrollService.addEmployeesToPayrollWithThreads(Arrays.asList(arrayOfEmps));
         Instant threadend = Instant.now();
         System.out.println("Duration with thread: "+Duration.between( threadStart,threadend ));
-        Assert.assertEquals( 16,employeePayrollService.countEntries(DB_IO) );
+        Assert.assertEquals( 18,employeePayrollService.countEntries(DB_IO) );
     }
 }

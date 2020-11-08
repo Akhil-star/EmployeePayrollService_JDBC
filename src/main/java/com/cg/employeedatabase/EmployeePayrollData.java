@@ -10,6 +10,8 @@ public class EmployeePayrollData {
     double salary;
     LocalDate startDate;
     String gender;
+    String comp_name;
+    String dept_name;
 
 
     public EmployeePayrollData(int id, String name, double salary, LocalDate startDate) {
@@ -22,6 +24,12 @@ public class EmployeePayrollData {
     public EmployeePayrollData(int id, String name,String gender, double salary, LocalDate startDate) {
         this(id,name,salary,startDate);
         this.gender = gender;
+    }
+
+    public EmployeePayrollData(int id, String name,String gender, double salary, LocalDate startDate, String comp_name,String dept_name) {
+        this(id,name,gender,salary,startDate);
+        this.comp_name = comp_name;
+        this.dept_name = dept_name;
     }
 
 
@@ -56,6 +64,30 @@ public class EmployeePayrollData {
 
     public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getComp_name() {
+        return comp_name;
+    }
+
+    public void setComp_name(String comp_name) {
+        this.comp_name = comp_name;
+    }
+
+    public String getDept_name() {
+        return dept_name;
+    }
+
+    public void setDept_name(String dept_name) {
+        this.dept_name = dept_name;
     }
 
     @Override
