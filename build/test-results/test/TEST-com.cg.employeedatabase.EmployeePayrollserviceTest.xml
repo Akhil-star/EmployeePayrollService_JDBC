@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.employeedatabase.EmployeePayrollserviceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-07T02:47:59" hostname="DESKTOP-AURK5V2" time="0.865">
+<testsuite name="com.cg.employeedatabase.EmployeePayrollserviceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-08T13:42:59" hostname="DESKTOP-AURK5V2" time="0.457">
   <properties/>
-  <testcase name="givenEmployeePayrollInDB_WhenRetrieved_ShouldMatchEmployeeCount" classname="com.cg.employeedatabase.EmployeePayrollserviceTest" time="0.865"/>
+  <testcase name="givenNewEmployee_WhenAdded_ShouldSyncWithDB" classname="com.cg.employeedatabase.EmployeePayrollserviceTest" time="0.457"/>
   <system-out><![CDATA[Driver Loaded!!
+  com.mysql.jdbc.Driver
+  com.mysql.fabric.jdbc.FabricMySQLDriver
+Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
+Connection was successful
+Driver Loaded!!
+  com.mysql.jdbc.Driver
+  com.mysql.fabric.jdbc.FabricMySQLDriver
+Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
+Connection was successful
+Driver Loaded!!
   com.mysql.jdbc.Driver
   com.mysql.fabric.jdbc.FabricMySQLDriver
 Connecting to the Database jdbc:mysql://localhost:3306/employeepayroll_service?useSSL=false
